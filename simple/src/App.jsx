@@ -16,8 +16,10 @@ function App() {
 
   return(
     <>
-    <h1 className='text-blue-400'>Dhanunjay</h1>
-    <button className='bg-green-300 rounded-full px-5 ml-100 mt-100'>Increment</button>
+    <h1 className='text-blue-400' text-center>{count}</h1>
+    <button className='bg-green-300 rounded-full px-2 ml-50 mt-10' onClick={increment}>increment</button>
+    <button className='bg-green-300 rounded-full px-2 ml-50 mt-10' onClick={decrement}>decrement</button>
+    <button className='bg-green-300 rounded-full px-2 ml-50 mt-10' onClick={reset}>reset</button>
     </>
   )
         
@@ -26,4 +28,5 @@ function App() {
   
 }
 
-export default App
+export default App;
+
